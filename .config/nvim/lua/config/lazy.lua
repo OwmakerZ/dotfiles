@@ -15,4 +15,10 @@ vim.opt.rtp:prepend(lazypath)
 
 -- Setup lazy.nvim
 require("lazy").setup({
+    -- Theme
+    require('themes.nightfox'),
+    -- Plugins
+    { "nvim-tree/nvim-web-devicons", lazy = true },
+    require('plugins.lualine'),
+    require('plugins.nvimtree'),
 })
